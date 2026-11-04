@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.13+19] - 2026-11-04
+
+### Redesigned & Polished
+- **UI: Complete Tank Card Redesign (`_GlassTankCard`)**:
+  - **Integrated Hero Photo Header**: Expanded photo height to 185px with cinematic dual gradient vignettes.
+  - **Frosted Acrylic Badges**: Replaced dull dark boxes with luxury acrylic glass pills (`🌊 Marine` category badge, `🟢 ACTIVE` live status indicator, and `⏱ Running Days` counter).
+  - **Cohesive 3-Column Specs Grid**: Replaced cluttered, mismatched colored chips with a clean automotive/smart-home styled specs bar featuring **Water Volume**, **Formatted Dimensions (`24×18×16`)**, and **Cycling Days**.
+  - **Clean Purpose Subtitle**: Formatted tank purpose note as an elegant subtitle line with subtle flag icon instead of disconnected colored pills.
+
+---
+
 ## [1.4.12+18] - 2026-11-04
 
 ### Redesigned & Polished

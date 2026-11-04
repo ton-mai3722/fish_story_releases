@@ -7,7 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.4.9+15] - 2026-11-04
+## [1.4.10+16] - 2026-11-04
+
+### Fixed & Performance Overhaul
+- **Performance: 120 FPS Buttery-Smooth Scroll**:
+  - Removed 60-120Hz continuous ambient repaint loop (`AnimationController` + full-screen `BackdropFilter` sigma 50).
+  - Replaced CPU/GPU-heavy backdrop filters with high-performance static radial mesh gradient and hardware-accelerated translucent layers.
+  - Eliminated nested `BackdropFilter` readbacks from cards (`_ProjectCard`, `_GlassTankCard`, header icons, segmented bar) to completely solve scrolling lag and stutter.
+- **Layout & Typography: Font Scaling Clamped**:
+  - Clamped global Android system `textScaler` (`minScaleFactor: 0.85, maxScaleFactor: 1.0`) to prevent oversized system font settings from blowing up UI components.
+  - Reduced oversized font sizes in Summary Card, Header, and Floating Action Button.
+  - Shortened labels to fit compact mobile screens without text clipping.
+- **UI: Mobile Modal Overlay Offset**:
+  - Fixed Add Change Log modal bottom sheet positioning so action buttons are never obscured by bottom system navigation bar.
 
 ### Added
 - **UI: Apple Liquid Glass Redesign**:

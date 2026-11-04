@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.15+21] - 2026-11-04
+
+### Fixed & Cleaned
+- **Bug Fix: In-App Version Checker Platform Registration**:
+  - Registered `GeneratedPluginRegistrant.registerWith(flutterEngine)` explicitly in `MainActivity.kt` ensuring native Android plugin channels (including `package_info_plus`) are always bound.
+  - Added defensive `try-catch` with automatic fallback versioning (`v1.4.15+21`) in `AppUpdateService` to prevent `MissingPluginException` or raw error cards from displaying.
+- **UI: Streamlined Home Header**:
+  - Removed redundant language toggle from the Home header; language selection is now conveniently managed exclusively in the **Settings** page.
+
+---
+
 ## [1.4.14+20] - 2026-11-04
 
 ### Added & Redesigned

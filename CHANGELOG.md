@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.16+22] - 2026-11-04
+
+### Added & Redesigned
+- **Feature: In-App Downloader & Package Installer (ดาวน์โหลดและติดตั้งอัปเดตในแอป)**:
+  - Added native In-App APK downloader with real-time download progress bar, file size indicators, and automatic prompt to launch the native Android Package Installer (`open_filex` & `REQUEST_INSTALL_PACKAGES`).
+- **UI: True Floating Capsule Bottom Navigation Bar**:
+  - Removed opaque white background block; content now smoothly glides underneath the floating capsule menu across all tabs.
+- **UI: Complete Redesign with Shimmer Skeleton (Apple Liquid Glass UI & Shimmer Wave)**:
+  - **Tank Timeline Page (`TankTimelinePage`)**: Liquid Mesh ambient background, frosted showcase hero card, emerald Day 0 setup milestone node, category gradient badges (`💧 -30%`), and animated `_ShimmerBox` loading skeleton.
+  - **Project Fishes Page (`ProjectFishesPage`)**: Full visual overhaul replacing old heavy banner with floating frosted glass app bar, real-time live search, Survival Rate progress bar, filter pills (`ทั้งหมด`, `มีชีวิต`, `สูญเสีย`), and upgraded fish identity cards.
+  - **Tanks Management Page (`TanksManagementPage`)**: Replaced `CircularProgressIndicator` with full multi-card Shimmer Wave skeleton matching the layout, plus frosted header and gradient FAB.
+- **UI: Streamlined Header**:
+  - Removed red Logout button from Home header for a cleaner, minimalist overview.
+  - Fixed localization key `btn_add_fish` in Thai and English translations.
+
+---
+
 ## [1.4.15+21] - 2026-11-04
 
 ### Fixed & Cleaned

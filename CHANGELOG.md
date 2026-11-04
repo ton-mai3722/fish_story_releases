@@ -31,3 +31,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Resolved missing `TankTrackerCubit` dependency error when launching `TanksManagementPage` directly from Home screen.
 - **Android: Gradle 8 & Java 17 Compatibility**:
   - Configured optimized build properties for release APK generation.
+

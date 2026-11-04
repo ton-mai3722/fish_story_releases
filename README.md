@@ -53,3 +53,4 @@ Official Android APK releases are published directly on GitHub Releases:
 
 Maintained by **Tonmai Liang Pla** (@ton-mai3722).
 Designed and built for aquarium hobbyists with ❤️.
+

@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.11+17] - 2026-11-04
+
+### Added
+- **Feature: In-App Version Update & Settings Page (หน้าตั้งค่าและระบบอัปเดตเวอร์ชันในแอป)**:
+  - Added new **Settings Page** accessed via the gear icon on the Home page top header.
+  - **In-App Version Checker (`AppUpdateService`)**: Checks real-time releases against GitHub Releases API (`ton-mai3722/fish_story_releases/releases/latest`).
+  - **1-Click Direct Download & Update**: Users can tap "ดาวน์โหลดและอัปเดตทันที" to download the latest `.apk` and trigger installation directly from their device.
+  - Displays dynamic Release Notes, file size, and status badges.
+  - Users on the latest version can re-download APK or check for updates anytime.
+  - **Language & Preferences**: Switch between Thai 🇹🇭 and English 🇺🇸 with instant persistence.
+  - **Account & Community Links**: Quick links to official releases repository and user session logout.
+
+---
+
 ## [1.4.10+16] - 2026-11-04
 
 ### Fixed & Performance Overhaul

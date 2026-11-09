@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.25+31] - 2026-11-09
+
+### Added & Enhanced
+- **Feature: Strict Lock for Decommissioned Tanks (ล็อคการแก้ไขตู้ที่ยุบแล้วอย่างสมบูรณ์)**:
+  - If a tank is marked as decommissioned ("ยุบตู้แล้ว ⚠️"), all editing options are strictly locked and hidden across the app:
+    - Hides the "แก้ไขตู้" (Edit Tank) action from the Tank Timeline AppBar.
+    - Hides the edit pencil icon from the Home screen tank card and Tanks management list.
+    - Hides the "บันทึกการเปลี่ยนแปลง" (Floating Action Button) from the timeline, preventing new change logs from being submitted.
+    - Hides edit and delete actions on timeline logs for decommissioned tanks.
+    - Added security guard inside `TankFormDialog` preventing decommissioned tanks from being opened or edited.
+
+---
+
 ## [1.4.24+30] - 2026-11-09
 
 ### Added & Enhanced

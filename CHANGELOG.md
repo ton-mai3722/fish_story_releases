@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.24+30] - 2026-11-09
+
+### Added & Enhanced
+- **Feature: Direct Tank Edit & Decommissioning Access (ปุ่มแก้ไขตู้ & เมนูยุบตู้โดยตรง)**:
+  - Added direct **"แก้ไขตู้"** (Edit Tank) action button inside the AppBar of **Tank Timeline (`TankTimelinePage`)**.
+  - Added edit icon button on each **Tank Card (`_GlassTankCard`)** on the Home screen and Tanks tab.
+  - Made the full Tank Form Bottom Sheet reusable via `TankFormDialog`, allowing users to toggle **"ยุบตู้เลี้ยงแล้ว (ไม่ได้มีตู้นี้แล้ว) ⚠️"**, select the decommission date, and enter the reason from anywhere in the app.
+  - Displays high-visibility decommission badges (`⚠️ ยุบตู้แล้ว`) and detailed decommission reason banners across Home cards, Tanks lists, and Timeline hero headers.
+
+---
+
 ## [1.4.23+29] - 2026-11-09
 
 ### Added & Enhanced

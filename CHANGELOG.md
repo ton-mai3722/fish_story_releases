@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.17+23] - 2026-11-09
+
+### Added & Enhanced
+- **Feature: Tank Decommission & Reason Tracking (ระบบยุบตู้เลี้ยง & ระบุเหตุผล)**:
+  - Added ability to mark tanks as decommissioned ("ยุบตู้แล้ว / ไม่ได้มีตู้นี้แล้ว") along with decommission date and detailed reason (e.g. ขายตู้, รั่วซึม, ย้ายปลาไปตู้ใหม่, เลิกเลี้ยงชั่วคราว).
+  - Updated days running calculation to freeze at the decommission date instead of continuing to count.
+  - Enhanced Tank Cards and Tank Timeline with high-visibility decommission warning badges, reason details box, and updated status indicators across App, CMS, and Backend API.
+
+---
+
 ## [1.4.16+22] - 2026-11-04
 
 ### Added & Redesigned

@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.23+29] - 2026-11-09
+
+### Added & Enhanced
+- **Feature: Pet Rehome Tracking & History Locking (ระบบย้ายบ้านสัตว์เลี้ยง & ล็อคการแก้ไขประวัติ)**:
+  - Added "ย้ายบ้าน 🏡" (Rehomed) status for pets and livestock alongside existing alive and deceased options.
+  - Automatically locks the profile and timeline from further edits and hides the "บันทึกเพิ่มเติม" button once a pet is rehomed or deceased.
+  - Auto-heals and synchronizes existing timeline entries with the fish profile across Mobile App, Web CMS, and Backend API.
+  - Excluded rehomed pets from the active alive count on the Dashboard.
+
+---
+
 ## [1.4.17+23] - 2026-11-09
 
 ### Added & Enhanced

@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.26+32] - 2026-11-10
+
+### Added & Enhanced
+- **Feature: Apple Liquid Glass Tank Card & Timeline Photo Slideshow (การ์ดตู้ปลา Liquid Glass & สไลด์โชว์ภาพจากไทม์ไลน์)**:
+  - ดีไซน์การ์ดตู้ปลาใหม่บนหน้า Home และ Tab Tanks ให้ทันสมัย สวยงาม นุ่มนวล สไตล์ Apple Liquid Glass พร้อม Bento Metrics แสดงปริมาตรน้ำ, ขนาดตู้ และจำนวนวันเปิดตู้
+  - ดึงภาพล่าสุดและรูปทั้งหมดจากบันทึกไทม์ไลน์มาทำเป็น Carousel Slideshow ปาดเลื่อนดูภาพพัฒนาการของตู้ปลาได้โดยตรงจากการ์ด
+  - แก้ปัญหาภาพกระพริบตอนเลื่อนหน้าจอและเลื่อนรูป โดยปรับระบบ Image Pre-caching ดึงภาพเข้า GPU/RAM ล่วงหน้า, แสดงภาพทันทีโดยไม่เฟดขาว (`fadeInDuration: Duration.zero`), ตัด Spinner ใน Placeholder ออก, และเปิด Keep-Alive สำหรับสไลด์
+- **Feature: Direct Add New Tank Action (เพิ่มตู้ปลาใหม่ได้ทันที)**:
+  - ปุ่ม "+ Add New Tank" บน Tab Tanks กดแล้วเปิดฟอร์มเพิ่มตู้ปลาใหม่ได้ทันที ไม่ต้อง Push ข้ามหน้า
+- **UI & Bug Fixes: Safe Area & Bilingual Tank Modal (ปรับปรุงหน้าต่างเพิ่มตู้ปลา)**:
+  - ปรับระยะ Safe Area ไม่ให้ Bottom Sheet เกยแถบ Status Bar ด้านบน
+  - รองรับระบบ 2 ภาษา (ไทย / อังกฤษ) ครบถ้วนทุกช่องและข้อความ
+  - ซ่อนส่วนระบุการยุบตู้ (Decommission) ออกอัตโนมัติเมื่อเป็นการสร้างตู้ใหม่
+- **UI Revamp: Hardware, Electricity & Maintenance Dashboard (ยกเครื่องหน้าอุปกรณ์ & ตารางดูแลตู้)**:
+  - ปรับโฉมหน้าอุปกรณ์และค่าไฟ แก้ไขปัญหา RenderFlex overflow บนหน้าจอขนาดต่างๆ
+  - ปรับปรุงการแสดงผลรายการกิจกรรมและตารางการดูแลตู้ปลา
+
+---
+
 ## [1.4.25+31] - 2026-11-09
 
 ### Added & Enhanced

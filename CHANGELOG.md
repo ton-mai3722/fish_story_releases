@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.0+34] - 2026-11-12
+
+### 🚀 Major Milestone Release (Apple Liquid Glass & Modern Aquarium Ecosystem)
+- **Apple Liquid Glass Design Language & Bento Cards (ยกเครื่องดีไซน์ใหม่หมด)**:
+  - ดีไซน์การ์ดและหน้าจอใหม่ในสไตล์ Apple Liquid Glass ผสาน Bento Grid บนทุกหน้าหลัก (หน้า Home, หน้าตู้เลี้ยง, หน้าอุปกรณ์ & ค่าไฟ, และหน้าตารางดูแลตู้)
+  - เพิ่ม Photo Carousel บนการ์ดตู้ปลา เลื่อนดูรูปพัฒนาการของตู้จากไทม์ไลน์ได้ทันที
+- **Direct Camera & Photo Upload (ระบบเลือกและถ่ายรูปจากอุปกรณ์โดยตรง)**:
+  - ถอดการใช้งาน Google Drive File ID / ลิงก์ภายนอกออกทั้งหมด รองรับการถ่ายภาพจากกล้องหรือเลือกจาก Photo Gallery ภายในเครื่องได้โดยตรง ทั้งบน Mobile App และ Web CMS
+- **Modern Pull-To-Refresh**:
+  - เปลี่ยนระบบรีเฟรชข้อมูลเป็น Gesture Pull-To-Refresh ลากดึงลงเพื่อโหลดข้อมูลใหม่ในทุกหน้า
+- **Smart Hardware & Utility Dashboard**:
+  - คำนวณค่าไฟฟ้า ค่าน้ำประปา และติดตามอายุการใช้งานอุปกรณ์ในตู้ปลาแบบเรียลไทม์
+- **Safe Area & Modal Polish**:
+  - ล็อคขอบเขต Modal Bottom Sheet ให้อยู่ใต้ Status Bar และ Dynamic Island พร้อม Grip Handle สไตล์ iOS Native
+
+---
+
 ## [1.4.27+33] - 2026-11-12
 
 ### Added & Enhanced

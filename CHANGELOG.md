@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.27+33] - 2026-11-12
+
+### Added & Enhanced
+- **UI & Bug Fixes: Safe Area & Status Bar Overlap (แก้ปัญหา Modal เกยขอบ Status Bar / Dynamic Island)**:
+  - เพิ่ม `useSafeArea: true` และ iOS Grab Handle บน Modal Bottom Sheet ของหน้า "อุปกรณ์ & ค่าไฟ" (Hardware Page) และหน้า "ตารางดูแลตู้" (Maintenance Page) ป้องกัน Modal ดันขึ้นไปทับแถบสถานะด้านบน
+- **Feature: Pull-To-Refresh ทุกหน้า**:
+  - เปลี่ยนจากการกดปุ่มรีเฟรชบนหัว AppBar เป็นการเลื่อนดึงเพื่อรีเฟรช (Pull-To-Refresh) ในทุกหน้า (ภาพรวม, ตู้เลี้ยง, จัดการตู้, ไทม์ไลน์ตู้ปลา, รายการปลา, ไทม์ไลน์ปลา) พร้อมนำปุ่มรีเฟรชและอวตารเดิมออกเพื่อความมินิมอล
+- **UX: ถ่ายภาพและเลือกรูปจากเครื่องโดยตรง (Direct Camera & Gallery Photo Picker)**:
+  - ตัดช่องกรอก Google Drive File ID หรือ External URL ออกทั้งหมด ทั้งในแอปและ CMS ให้เลือกถ่ายภาพหรือเลือกไฟล์รูปจากเครื่องได้โดยตรง
+- **Design: Modern Liquid Glass & Compact Layout**:
+  - ปรับดีไซน์หน้าตารางดูแลตู้ และหน้าอุปกรณ์ & ค่าไฟ เป็นสไตล์ Apple Liquid Glass และ Bento UI
+  - ปรับลดช่องว่างระหว่างการ์ดตู้ปลาบนหน้า Home ให้กระชับ สวยงามพอดีกับหน้าจอ
+
+---
+
 ## [1.4.26+32] - 2026-11-10
 
 ### Added & Enhanced

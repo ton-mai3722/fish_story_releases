@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.1+35] - 2026-11-12
+
+### 🔐 Firebase Authentication & Multi-Tenant Isolation
+- **Firebase Authentication Integration**:
+  - เปลี่ยนระบบ Login จาก Username เป็น Firebase Authentication (Email & Password)
+  - รองรับการ Sign-in และจัดการ Session อย่างปลอดภัย
+- **User-Isolated Database Architecture**:
+  - ปรับโครงสร้าง Firestore ให้แยกข้อมูลผู้ใช้แต่ละรายอย่างเป็นสัดส่วนภายใต้ Collection `users/{userId}/...`
+  - ย้ายข้อมูลตู้ปลา, ปลา, ค่าใช้จ่าย และประวัติการบันทึกเข้าสู่ User Collection ใหม่อย่างสมบูรณ์
+- **Codebase Clean-Up**:
+  - ลบ Hardcoded bypass เก่าทั้งหมดออก 100%
+
+---
+
 ## [1.5.0+34] - 2026-11-12
 
 ### 🚀 Major Milestone Release (Apple Liquid Glass & Modern Aquarium Ecosystem)

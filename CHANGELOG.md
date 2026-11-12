@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.2+36] - 2026-11-12
+
+### 🎨 UI & Clean-up
+- **Generic Login Input Placeholders**:
+  - ลบตัวอย่างอีเมลส่วนตัวออกจากช่องกรอกอีเมลทั้งภาษาไทยและอังกฤษ
+  - ปรับเป็นข้อความแนะนำทั่วไป "กรอกอีเมลของคุณ" / "Enter your email"
+
+---
+
 ## [1.5.1+35] - 2026-11-12
 
 ### 🔐 Firebase Authentication & Multi-Tenant Isolation

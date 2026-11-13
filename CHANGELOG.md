@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.4+38] - 2026-11-13
+
+### 📜 Terms & Conditions & Privacy Policy Gate (ข้อกำหนดและเงื่อนไขการใช้งาน)
+- **First-Time Login & Post-Registration Consent**:
+  - เพิ่มหน้าต่างยืนยันข้อกำหนดและเงื่อนไขการใช้งาน (Terms & Conditions) และนโยบายความเป็นส่วนตัว (Privacy Policy) สไตล์ Apple Liquid Glass
+  - ตรวจสอบสถานะการยอมรับข้อกำหนดอัตโนมัติเมื่อ:
+    - ผู้ใช้สมัครสมาชิกใหม่เสร็จสิ้น (Register)
+    - ผู้ใช้เข้าสู่ระบบครั้งแรก (First-Time Login) ด้วย Email หรือ Google
+  - บันทึกการยอมรับข้อกำหนด `acceptedTerms: true`, `termsAcceptedAt`, และ `termsVersion` ลง Firestore
+  - ป้องกันการเข้าถึงข้อมูลโดยไม่ผ่านการยอมรับข้อกำหนด (หากยกเลิกระบบจะ Sign-out กลับสู่หน้า Login อย่างปลอดภัย)
+
+---
+
 ## [1.5.3+37] - 2026-11-13
 
 ### 🔐 Register & Google Sign-In (ระบบสมัครสมาชิกและเข้าสู่ระบบด้วย Google)

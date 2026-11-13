@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.3+37] - 2026-11-13
+
+### 🔐 Register & Google Sign-In (ระบบสมัครสมาชิกและเข้าสู่ระบบด้วย Google)
+- **Register Mode & User Creation**:
+  - เพิ่มแถบ Segmented Tab สลับระหว่าง "เข้าสู่ระบบ" และ "สมัครสมาชิก"
+  - รองรับการสร้างบัญชีผู้ใช้ด้วยอีเมลและรหัสผ่าน พร้อมระบุ **ชื่อผู้ใช้ (Display Name)**
+  - บันทึกโปรไฟล์ลง Firestore `users/{uid}` อัตโนมัติ พร้อมตั้งค่า Role และ Timestamp
+- **Google Sign-in**:
+  - รองรับการเข้าสู่ระบบผ่าน Google Account ด้วย Firebase Authentication
+  - ออกแบบปุ่ม Liquid Frosted White Glass พร้อมโลโก้ Google 4 สี
+  - ซิงค์ Display Name และโปรไฟล์อัตโนมัติ
+
+### 👤 Display Name Everywhere
+- แสดงชื่อจริงของผู้ใช้ (Display Name) แทนรหัส UID ทั้งในหน้าหลัก (Home Page), การตั้งค่า (Settings Page) และ Web CMS Header
+
+### 📁 Google Drive Clean Hierarchy Architecture
+- ปรับโครงสร้างจัดเก็บรูปภาพใน Google Drive แยกตาม User ID และหมวดหมู่อย่างเป็นระเบียบ:
+  `Root (1Qk6tdv8ws5yHBqxdVXPB2KyebmjC5cAX) -> user_{uid} -> fishes / tanks / others`
+- รูปโปรไฟล์ปลาและไทม์ไลน์บันทึกปลาเก็บใน `fishes/fish_{id}`
+- รูปตู้ปลาและบันทึกการดูแลเก็บใน `tanks/tank_{id}`
+- รูปสลิปค่าใช้จ่ายและอุปกรณ์เก็บใน `others/`
+
+---
+
 ## [1.5.2+36] - 2026-11-12
 
 ### 🎨 UI & Clean-up

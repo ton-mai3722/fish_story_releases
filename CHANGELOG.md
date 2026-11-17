@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.12+46] - 2026-11-17
+
+### 🐛 Fix ListTile Material Ancestor Assertion (แก้ไข Assertion ของ ListTile ภายใน Container)
+- **Wrapped `ListTile` & `SwitchListTile` in `Material` Widgets**:
+  - แก้ไขข้อผิดพลาด `ListTile background color or ink splashes may be invisible` ในหน้า Quick Add Sheet (`home_page.dart`), ฟอร์มเพิ่มตู้ปลา (`tank_form_dialog.dart`), และหน้าจัดการอุปกรณ์ (`hardware_page.dart`)
+  - หุ้ม `ListTile` / `SwitchListTile` ด้วย `Material(clipBehavior: Clip.antiAlias, borderRadius: ...)` เพื่อให้สีพื้นหลังและเอฟเฟกต์ Ink Splash แสดงผลอย่างถูกต้องตามมาตรฐาน Flutter
+
+---
+
 ## [1.5.11+45] - 2026-11-17
 
 ### 🧹 Clean Settings Page (ตัดเมนูที่ยังไม่รองรับออกจากหน้าตั้งค่า)

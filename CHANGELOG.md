@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.8+42] - 2026-11-17
+
+### 📐 Home Empty State Cards Full Width Alignment (ปรับขนาดการ์ดสถานะว่างให้กว้างเต็มเท่าการ์ดอื่น)
+- **Full Width Responsive Layout**:
+  - ปรับความกว้างการ์ดแจ้งเตือนสถานะเมื่อยังไม่มีข้อมูลปลาหรือตู้เลี้ยง (`_buildEmptyState` และ `_buildEmptyTanksState`) ให้กางกว้างเต็มความกว้างหน้าจอ (`width: double.infinity`)
+  - จัดระยะขอบซ้าย-ขวาให้ตรงกับ Hero Summary Card และการ์ดอื่น ๆ ในหน้า Home อย่างสมบูรณ์แบบตาม `ResponsiveLayout.horizontalPadding(context)`
+  - ปรับปรุงให้รองรับทั้งในหน้า **ภาพรวม (Home)**, **ปลา (Fishes)**, **ตู้เลี้ยง (Tanks)**, และ **บันทึก (Logs)** อย่างเป็นระเบียบสวยงาม
+
+---
+
 ## [1.5.7+41] - 2026-11-17
 
 ### ✨ Interactive Animated Bottom Navigation Bar (แอนิเมชันเนวิเกชันบาร์ตอนกด)

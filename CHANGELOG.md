@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.10+44] - 2026-11-17
+
+### ✨ Minimalist Sliding-Pill Navigation Bar (ปรับโฉม Navbar ให้เรียบหรู สบายตา)
+- **Clean Sliding Pill Indicator**:
+  - เปลี่ยนจากกรอบขอบและแถบขีดด้านล่างที่ดูเยอะเกินไป เป็น **แถบแคปซูลโปร่งแสงชิ้นเดียว (`AnimatedPositioned`)** ที่เลื่อนไหลข้ามแท็บอย่างนุ่มนวลตามตำแหน่งที่กด
+  - ไม่มีขอบซ้อนและไม่มีขีดกวนสายตา คงความสะอาดตาแบบ Apple Liquid Glass
+- **Subtle Micro-Interactions**:
+  - ยุบตัวเบา ๆ (`scale: 0.90`) เมื่อแตะ พร้อมเปลี่ยนสีและขยายไอคอนอย่างนุ่มนวล (`1.08x`)
+
+---
+
 ## [1.5.9+43] - 2026-11-17
 
 ### 🐛 Fix Navigation Bar Text Shadow Assertion (แก้ไขข้อผิดพลาด Blur Radius ใน NavBar)

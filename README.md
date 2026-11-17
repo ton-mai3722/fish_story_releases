@@ -11,6 +11,7 @@ Official Android APK releases are published directly on GitHub Releases:
 
 | Version | Build | Release Date | Android APK Download |
 | :---: | :---: | :---: | :---: |
+| **v1.5.11** | `45` | 2026-11-17 | [Download FishStory-v1.5.11.apk](https://github.com/ton-mai3722/fish_story_releases/releases/download/v1.5.11/FishStory-v1.5.11.apk) |
 | **v1.5.10** | `44` | 2026-11-17 | [Download FishStory-v1.5.10.apk](https://github.com/ton-mai3722/fish_story_releases/releases/download/v1.5.10/FishStory-v1.5.10.apk) |
 | **v1.5.9** | `43` | 2026-11-17 | [Download FishStory-v1.5.9.apk](https://github.com/ton-mai3722/fish_story_releases/releases/download/v1.5.9/FishStory-v1.5.9.apk) |
 | **v1.5.8** | `42` | 2026-11-17 | [Download FishStory-v1.5.8.apk](https://github.com/ton-mai3722/fish_story_releases/releases/download/v1.5.8/FishStory-v1.5.8.apk) |

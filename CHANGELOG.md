@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.9+43] - 2026-11-17
+
+### 🐛 Fix Navigation Bar Text Shadow Assertion (แก้ไขข้อผิดพลาด Blur Radius ใน NavBar)
+- **Resolved Shadow Interpolation Exception**:
+  - แก้ไขข้อผิดพลาด `Text shadow blur radius should be non-negative` ใน `dart:ui/painting.dart`
+  - ปรับการแอนิเมชันของแคปซูลและ Indicator ใน `_AnimatedBottomNavItem` โดยใช้ `Curves.easeOut` ที่เรียบเนียน และตัด `BoxShadow` ออกจากการสลับสถานะ `BoxDecoration` เพื่อป้องกันค่ารัศมีเงาติดลบระหว่างการแทรกค่าเฟรม
+
+---
+
 ## [1.5.8+42] - 2026-11-17
 
 ### 📐 Home Empty State Cards Full Width Alignment (ปรับขนาดการ์ดสถานะว่างให้กว้างเต็มเท่าการ์ดอื่น)

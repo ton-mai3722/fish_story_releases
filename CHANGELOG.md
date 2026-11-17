@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.7+41] - 2026-11-17
+
+### ✨ Interactive Animated Bottom Navigation Bar (แอนิเมชันเนวิเกชันบาร์ตอนกด)
+- **Haptic & Spring Press Animation**:
+  - เพิ่มแอนิเมชันตอบสนองการกดแบบสปริง (`AnimatedScale` ยุบลง 0.86 เมื่อแตะ และดีดตัวกลับด้วย `Curves.elasticOut`)
+  - รองรับการสั่นตอบสนองแบบเบา (`HapticFeedback.selectionClick()`) ทันทีที่แตะ
+- **Active Tab Selection & Pop Bounce**:
+  - เมื่อเปลี่ยนแท็บ ไอคอนจะเล่นแอนิเมชันเด้ง Pop (`Scale: 1.30` -> `1.0` และลอยตัว `Offset: -3.5px` -> `0.0`) ด้วย `Curves.elasticOut` & `Curves.bounceOut`
+  - กรอบพื้นหลังแคปซูลเรืองแสงนุ่มนวลตามสีประจำแท็บ (`BoxShadow` + สีไฮไลท์โปร่งแสง)
+  - แถบ Indicator ด้านล่างตัวหนังสือขยายตัวและเปล่งประกายสีประจำหมวดหมู่อย่างนุ่มนวล
+- **Apple Frosted Acrylic Glass Container**:
+  - หุ้มขอบแคปซูลด้วย `ClipRRect(32)` และเบลอพื้นหลังด้วย `BackdropFilter(sigma: 16)` สไตล์ Liquid Glass อย่างสมบูรณ์แบบ
+
+---
+
 ## [1.5.6+40] - 2026-11-17
 
 ### ⚖️ Legal Privacy & Terms Neutralization (ปรับปรุงข้อกำหนดและนโยบายความเป็นส่วนตัวตามมาตรฐานสากล)

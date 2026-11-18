@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.16+50] - 2026-11-18
+
+### 🗑️ Permanent Account & Data Deletion (ลบบัญชีถาวรเฉพาะข้อมูลของผู้ใช้คนนั้น ๆ)
+- **เพิ่มฟังก์ชัน `ลบบัญชีถาวร` ในหน้าตั้งค่า (`settings_page.dart`)**:
+  - **Re-authentication อัตโนมัติ**: หากเซสชันเกิน 4 นาที ระบบจะให้ยืนยันตัวตน (รหัสผ่าน หรือ Google Sign-In) ก่อนลบเพื่อความปลอดภัยสูงสุด
+  - **ลบข้อมูล Firestore เฉพาะผู้ใช้คนนั้น (`users/{uid}`)**: ลบข้อมูลปลา + ประวัติ `logs`, ตู้เลี้ยง + `logs`/`expenses`/`hardwares`/`maintenance_tasks` และเอกสารโปรไฟล์ผู้ใช้ทั้งหมด
+  - **ลบรูปภาพและโฟลเดอร์ Google Drive เฉพาะผู้ใช้คนนั้น (`user_{uid}`)**: ลบไฟล์และโฟลเดอร์ย่อยทั้งหมดภายใน `user_{uid}` แบบ Recursive โดยไม่กระทบข้อมูลของผู้ใช้คนอื่น
+  - **ลบบัญชี Firebase Auth & Session**: ลบบัญชีผู้ใช้ออกจาก Firebase Authentication และล้างแคช/เซสชันในเครื่องอย่างสมบูรณ์
+
+---
+
 ## [1.5.15+49] - 2026-11-18
 
 ### 📐 Top-Aligned Empty State Cards (จัดตำแหน่งการ์ดสถานะว่างให้อยู่ด้านบน)

@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.15+49] - 2026-11-18
+
+### 📐 Top-Aligned Empty State Cards (จัดตำแหน่งการ์ดสถานะว่างให้อยู่ด้านบน)
+- **ย้ายการ์ดแสดงสถานะว่างขึ้นไปชิดส่วนหัวด้านบน**:
+  - เปลี่ยนจาก `SliverFillRemaining` + `Center` (ที่ดันการ์ดลงมากลางหน้าจอจนเกิดพื้นที่ว่างด้านบนมากเกินไป) เป็น `SliverToBoxAdapter` ในแท็บ **ปลา (Fishes)**, **ตู้เลี้ยง (Tanks)** และ **บันทึก (Logs)**
+  - การ์ดแสดงผลอยู่ชิดใต้ Header อย่างเป็นระเบียบและสมดุลเช่นเดียวกับหน้า Home
+
+---
+
 ## [1.5.14+48] - 2026-11-18
 
 ### 🛡️ Centralized User-Friendly Error Handling (ระบบจัดการ Error กลางที่เป็นมิตรต่อผู้ใช้)

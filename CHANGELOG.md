@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.18+52] - 2026-11-18
+
+### 🐛 Fix OTP Screen Horizontal Overflow (`otp_verification_page.dart`)
+- **Responsive 6-Digit OTP Boxes & Resend Text**:
+  - เปลี่ยนช่องกรอก OTP 6 หลักเป็น `Expanded` ภายใน `Row` เพื่อปรับขนาดอัตโนมัติตามความกว้างหน้าจอทุกขนาด
+  - เปลี่ยน `Row` ของข้อความนับถอยหลัง/ปุ่มส่งรหัสใหม่เป็น `Wrap` เพื่อป้องกัน `RenderFlex overflowed` บนหน้าจอขนาดเล็ก
+
+---
+
 ## [1.5.17+51] - 2026-11-18
 
 ### ✉️ Email OTP Verification & Mandatory Re-auth Account Deletion

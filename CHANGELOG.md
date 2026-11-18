@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.13+47] - 2026-11-18
+
+### 🌐 Bilingual Splash Screen (รองรับ 2 ภาษาในหน้า Splash Screen)
+- **รองรับภาษาไทย (TH 🇹🇭) และภาษาอังกฤษ (EN 🇺🇸) อัตโนมัติตั้งแต่หน้าแรก**:
+  - เพิ่ม Key คำแปล `splash` ใน `th.json` และ `en.json` (`pill`, `slogan`, `subtitle`, `loading`)
+  - เชื่อมต่อ `context.tr(...)` ใน `splash_page.dart` แทนข้อความภาษาไทยที่เคยฝังตายตัว
+
+---
+
 ## [1.5.12+46] - 2026-11-17
 
 ### 🐛 Fix ListTile Material Ancestor Assertion (แก้ไข Assertion ของ ListTile ภายใน Container)

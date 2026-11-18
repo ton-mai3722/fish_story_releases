@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.17+51] - 2026-11-18
+
+### ✉️ Email OTP Verification & Mandatory Re-auth Account Deletion
+- **ระบบยืนยันอีเมลด้วย OTP 6 หลักตอนสมัครสมาชิก**:
+  - เพิ่มหน้ากรอก OTP สไตล์ Apple Liquid Glass (`OtpVerificationPage`) พร้อมช่องกรอก 6 หลัก, นับถอยหลังส่งรหัสใหม่ 60 วินาที, และรองรับ 2 ภาษา (ไทย/อังกฤษ)
+  - เชื่อมต่อ `EmailOtpService` กับ Backend (`/api/auth/send-otp`, `/api/auth/verify-otp`) ก่อนสร้างบัญชี Firebase Auth
+- **ปรับปรุงระบบยืนยันตัวตนก่อนลบบัญชีถาวร (`settings_page.dart`)**:
+  - บังคับยืนยันรหัสผ่าน (สำหรับบัญชี Email) หรือยืนยันด้วย Google Sign-In **ทุกครั้ง** ก่อนลบข้อมูลใน Firestore, Google Drive และ Firebase Auth
+  - แก้ไขบั๊ก `TextEditingController` ถูก dispose ระหว่างปิด Dialog และเพิ่ม `SingleChildScrollView` ป้องกัน Overflow
+
+---
+
 ## [1.5.16+50] - 2026-11-18
 
 ### 🗑️ Permanent Account & Data Deletion (ลบบัญชีถาวรเฉพาะข้อมูลของผู้ใช้คนนั้น ๆ)

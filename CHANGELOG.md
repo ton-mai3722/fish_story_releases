@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.19+53] - 2026-11-18
+
+### 📜 Full-Screen Non-Backable Terms & Conditions Flow (OTP → Terms Page → Home)
+- **สร้างหน้า `TermsAndConditionsPage` เต็มหน้าจอ (`terms_and_conditions_page.dart`)**:
+  - เปลี่ยนจาก Modal Bottom Sheet เป็นการ **Push ไปหน้า Terms & Conditions โดยตรง** หลังจากยืนยันรหัส OTP สำเร็จ
+  - **ป้องกันการกดย้อนกลับ (`PopScope(canPop: false)` + `pushAndRemoveUntil`)**: ไม่สามารถกด Back กลับไปยังหน้า OTP หรือหน้า Login ได้
+  - กดยอมรับ -> บันทึกสถานะ `acceptedTerms: true` และเข้าสู่หน้า Home ทันที
+  - กดยกเลิก -> Sign-out ออกจากระบบและกลับสู่หน้า Login อย่างปลอดภัย
+- **Backend Email Subject Update**: เพิ่มรหัส OTP ในหัวข้ออีเมลเพื่อป้องกัน Gmail พับรวมอีเมลซ้ำ
+
+---
+
 ## [1.5.18+52] - 2026-11-18
 
 ### 🐛 Fix OTP Screen Horizontal Overflow (`otp_verification_page.dart`)

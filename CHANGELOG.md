@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.14+48] - 2026-11-18
+
+### 🛡️ Centralized User-Friendly Error Handling (ระบบจัดการ Error กลางที่เป็นมิตรต่อผู้ใช้)
+- **สร้าง Core กลาง `AppErrorHandler` และ `enum AppErrorType` (`lib/core/error/app_error_handler.dart`)**:
+  - จัดกลุ่ม Error มาตรฐาน (เช่น `network`, `timeout`, `server`, `authInvalidCredentials`, `authGoogleSignIn`, `authEmailInUse`, `authWeakPassword`, `downloadFailed`, `uploadFailed`, `unknown`)
+  - แปลง Exception ทางเทคนิคทั้งหมด (เช่น `PlatformException(google_sign_in, GIDClientID...)`, `FirebaseAuthException`, `SocketException`, `TimeoutException`) เป็นข้อความภาษาไทยและภาษาอังกฤษที่ผู้ใช้ทั่วไปเข้าใจง่าย
+  - เก็บ Raw Error ไว้เฉพาะใน `debugPrint` สำหรับนักพัฒนา ไม่แสดงข้อความเทคนิคตรง ๆ บนหน้าจออีกต่อไป
+- **ครอบคลุมทุกหน้าและ BLoC/Cubit**:
+  - `login_page.dart`, `home_page.dart`, `settings_page.dart`, `fish_timeline_page.dart`, `smart_form_page.dart`, `tank_tracker_page.dart`
+  - `HomeBloc`, `TimelineBloc`, `SmartFormBloc`, `TankTrackerCubit`
+
+---
+
 ## [1.5.13+47] - 2026-11-18
 
 ### 🌐 Bilingual Splash Screen (รองรับ 2 ภาษาในหน้า Splash Screen)
